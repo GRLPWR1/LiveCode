@@ -1,0 +1,20 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a .nutrution {
+    background-image: url("./images/nutrition.png");
+    width: 480px;
+    height: 480px;
+}
+footer h5{
+    color: rgba(34, 53, 111);
+}
+footer {
+    color: rgba(34, 53, 111, 0.5);
+}
+footer>p {
+    font-size: 14;
+    color: #FFFFFF;
+    background-color: #62D0DF;
+    height: 80px;
+}
