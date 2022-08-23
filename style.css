@@ -1,5 +1,62 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.logo {
+    color: #62D0DF;
+    font-size: 24px;
+}
+nav {
+    text-align: center;
+}
+nav a {
+    position:
+    color:#22356F;
+    padding: 10px;
+    font-size: 14px;
+}
+nav a:active {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: indigo;
+}
+button.contact {
+    background-color: #62D0DF;
+    color:#FFFFFF;
+    border-radius: 20px;
+    border-width: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+button:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+h1 {
+    color: #22356F;
+    font-size: 48px;
+    margin-left: 179px;
+    width: 484px;
+    height: 167px;
+}
+main p:nth-of-type(2) {
+    width: 469px;
+    height: 161px;
+    font-size: 24px;
+    color: #22356F;
+    margin-left: 179px;
+}
+main button {
+    background-color: #F9B640;
+    color: #FFFFFF;
+    border-width: 0px;
+    padding: 10px;
 }
 a .nutrution {
     background-image: url("./images/nutrition.png");
@@ -16,5 +73,7 @@ footer>p {
     font-size: 14;
     color: #FFFFFF;
     background-color: #62D0DF;
-    height: 80px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    text-align: center;
 }
