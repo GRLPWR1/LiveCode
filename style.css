@@ -224,20 +224,20 @@ section.seventh p {
 }
 footer {
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
     color: rgba(34, 53, 111, 0.5);
 }
 footer h5{
     color: rgba(34, 53, 111);
 }
 footer img {
-    width: 25vw;
+    width: 30vw;
 }
 footer div:nth-child(2) {
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
 }
-footer div>p {
+footer div:last-child {
     font-size: 14;
     color: #FFFFFF;
     background-color: #62D0DF;
