@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
@@ -37,10 +37,7 @@ button.contact {
 button:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
-h1 {
-    color: #22356F;
-    font-size: 48px;
-}
+
 main p:nth-of-type(2) {
     font-size: 24px;
     color: #22356F;
@@ -54,6 +51,13 @@ main button {
 section.first {
     display:flex;
     margin-left: 10%;
+}
+section.first h3 {
+    font-size: 48px;
+}
+section.first div {
+    color: #22356F;
+    font-size: 24px;
 }
 section.first img {
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
@@ -95,16 +99,16 @@ section.third div:not(first-child) {
     text-align: center;
     padding: 10% 0 10% 0;
 }
-section.third div:nth-child(2) {
+section.third a:nth-child(2) {
     background-color: #FFE2DE;
 }
-section.third div:nth-child(3) {
+section.third a:nth-child(3) {
     background-color: #C4E769;
 }
-section.third div:nth-child(4) {
+section.third a:nth-child(4) {
     background-color: #62D0DF;
 }
-section.third div:nth-child(5) {
+section.third a:nth-child(5) {
     background-color: #0052C1;
 }
 section.forth {
@@ -122,22 +126,22 @@ section.forth a {
     font-size: 32px;
     letter-spacing: -0.006em;
 }
-section.forth div:first-child {
+section.forth a:first-child {
     background-color: #22356F;
 }
-section.forth div:nth-child(2) {
+section.forth a:nth-child(2) {
     background-color: #0052C1;
 }
-section.forth div:nth-child(3) {
+section.forth a:nth-child(3) {
     background-image: url("./images/nutrition.png");
 }
-section.forth div:nth-child(4) {
+section.forth a:nth-child(4) {
     background-color: #62D0DF;
 }
-section.forth div:nth-child(5) {
+section.forth a:nth-child(5) {
     background-color: #DEE1FF;
 }
-section.forth div:nth-child(6) {
+section.forth a:nth-child(6) {
     background-color: #8F00FF;
 }
 section.fifth {
