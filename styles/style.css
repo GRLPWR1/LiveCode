@@ -1,18 +1,26 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
+    width: 100%;
 }
 header {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5% 0 10%;
+    margin: 0 5% 0 0;
+    background-color: #F4F9E2;
 }
-.logo {
+.header__logo {
+    color: #62D0DF;
+    font-size: 24px;
+    padding: 0 0 0 10%;
+}
+.main__firstSection_logo {
     color: #62D0DF;
     font-size: 24px;
 }
-nav a {
+.header__nav_item {
     position:
     color: #22356F;
     padding: 10px;
@@ -27,12 +35,13 @@ a:hover {
 a:visited {
     color: indigo;
 }
-button.contact {
+.header__button_contact {
     background-color: #62D0DF;
     color:#FFFFFF;
     border-radius: 20px;
     border-width: 0px;
     padding: 10px 20px 10px 20px;
+    margin: 0 10% 0 0;
 }
 button:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2);
@@ -42,106 +51,124 @@ main p:nth-of-type(2) {
     font-size: 24px;
     color: #22356F;
 }
-main button {
+.main__firstSection {
+    /* width: 100%; */
+    background-color: #F4F9E2;
+}
+.main__firstSection__button_whoAmI {
     background-color: #F9B640;
     color: #FFFFFF;
     border-width: 0px;
     padding: 10px;
+    margin-bottom: 10%
 }
-section.first {
+.main__firstSection__button_whatIdo {
+    background-color: ;
+    color: #F9B640;
+    border-width: 0px;
+    padding: 10px;
+    margin-bottom: 10%
+}
+.main__firstSection {
     display:flex;
     margin-left: 10%;
 }
-section.first h3 {
+.main__firstSection_headline {
     font-size: 48px;
 }
-section.first div {
+.main__firstSection div {
     color: #22356F;
     font-size: 24px;
 }
-section.first img {
+.main__firstSection_img {
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
-    width: 30vw;
+    width: 30%;
+    height: 30%;
     border-radius: 50%;
+    margin-right: 5%;
 }
-section.second {
+.main__secondSection {
     display: flex;
     background-color: #62D0DF;
     color: #FFFFFF;
 }
-section.second h3 {
+.main__secondSection_headline {
     font-size: 36px;
     margin: 15% 0 0 10%
 }
-section.second p {
+.main__secondSection p {
     width: 70%;
     font-size: 24px;
     padding: 8% 8% 8% 10%
 }
-section.third {
+.main__thirdSection {
     display: flex;
+    color: #22356F;
+}
+.main__fourthSection {
+        display: flex;
     flex-flow: row wrap;
 }
-section.third div:first-child {
+.main__fourthSection div:first-child {
     color: #22356F80;
     font-size: 16px;
     justify-content: center;
     letter-spacing: 0.06em;
     padding: 5% 40% 5% 40%;
 }
-section.third a {
+.main__fourthSection a {
     color: #FFFFFF;
     font-size: 32px;
     letter-spacing: -0.006em;
 }
-section.third div:not(first-child) {
+.main__fourthSection div:not(first-child) {
     flex: 1 1 25%;
     text-align: center;
     padding: 10% 0 10% 0;
 }
-section.third a:nth-child(2) {
+.main_fourthSection__link_weightLifting {
     background-color: #FFE2DE;
 }
-section.third a:nth-child(3) {
+.main_fourthSection__link_running {
     background-color: #C4E769;
 }
-section.third a:nth-child(4) {
+.main_fourthSection__link_pumping {
     background-color: #62D0DF;
 }
-section.third a:nth-child(5) {
+.main_fourthSection__link_iron {
     background-color: #0052C1;
 }
-section.forth {
+.main__fifthSection {
     display: flex;
     margin-top: 10%;
     flex-flow: row wrap;
 }
-section.forth div {
+.main__fifthSection div {
     flex: 1 1 33%;
     text-align: center;
     padding: 15% 0 15% 0;
 }
-section.forth a {
+.main__fifthSection a {
     color: #FFFFFF;
     font-size: 32px;
     letter-spacing: -0.006em;
 }
-section.forth a:first-child {
+.main__fifthSection__link_physical {
     background-color: #22356F;
 }
-section.forth a:nth-child(2) {
+.main__fifthSection__link_mental {
     background-color: #0052C1;
 }
-section.forth a:nth-child(3) {
+.main__fifthSection__link_nutrition {
     background-image: url("./images/nutrition.png");
 }
-section.forth a:nth-child(4) {
+.main__fifthSection__link_gymnastics {
     background-color: #62D0DF;
 }
-section.forth a:nth-child(5) {
+.main__fifthSection__link_crossfit {
     background-color: #DEE1FF;
 }
-section.forth a:nth-child(6) {
+.main__fifthSection__link_aerobics {
     background-color: #8F00FF;
 }
 section.fifth {
