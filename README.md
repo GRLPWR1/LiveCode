@@ -1,4 +1,4 @@
-# homework4
+#LiveCode
 
-ITGirls week4 homework
+ITGirls LiveCode project
 fgfdgdgd
