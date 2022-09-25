@@ -24,7 +24,6 @@ a {
     font-size: 24px;
 }
 .header__nav__item {
-    position:
     color: #22356F;
     padding: 10px;
     font-size: 14px;
@@ -50,7 +49,7 @@ button:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 .main__firstSection {
-    /* width: 100%; */
+    display:flex;
     background-color: #F4F9E2;
 }
 .main__firstSection__button_whoAmI {
@@ -61,22 +60,19 @@ button:hover {
     margin-bottom: 10%
 }
 .main__firstSection__button_whatIdo {
-    background-color: ;
+    background-color: #F4F9E2;
     color: #F9B640;
     border-width: 0px;
     padding: 10px;
     margin-bottom: 10%
 }
-.main__firstSection {
-    display:flex;
-    margin-left: 10%;
-}
 .main__firstSection__headline {
     font-size: 48px;
 }
-.main__firstSection div {
+.main__firstSection__content {
     color: #22356F;
     font-size: 24px;
+    margin-left: 10%;
 }
 .main__firstSection__img {
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
@@ -102,6 +98,16 @@ button:hover {
 .main__thirdSection {
     display: flex;
     color: #22356F;
+}
+.main__thirdSection__headline {
+    font-size: 1rem;
+    margin: 10% 10% 0 10%;
+    flex-basis: 40%;
+}
+.main__thirdSection__text {
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 10% 20% 0 0;
 }
 .main__fourthSection {
     display: flex;
@@ -139,15 +145,13 @@ button:hover {
     margin-top: 10%;
     flex-flow: row wrap;
 }
-.main__fifthSection div {
+.main__fifthSection a {
+    color: #FFFFFF;
+    font-size: 2rem;
+    letter-spacing: -0.006em;
     flex: 1 1 33%;
     text-align: center;
     padding: 15% 0 15% 0;
-}
-.main__fifthSection a {
-    color: #FFFFFF;
-    font-size: 32px;
-    letter-spacing: -0.006em;
 }
 .main__fifthSection__link_physical {
     background-color: #22356F;
@@ -155,8 +159,9 @@ button:hover {
 .main__fifthSection__link_mental {
     background-color: #0052C1;
 }
-.main__fifthSection__link_nutrition {
-    background-image: url("./images/nutrition.png");
+.main__fifthSection a:nth-child(3) {
+    background-image: url(./images/nutrition.png);
+    background-repeat: no-repeat;
 }
 .main__fifthSection__link_gymnastics {
     background-color: #62D0DF;
@@ -169,28 +174,27 @@ button:hover {
 }
 .main__6thSection {
     display: flex;
-    margin-top: 2%;
+    margin-top: 5%;
     flex-flow: row wrap;    
 }
-.main__6thSection div {
-    flex: 1 1 33%;
-    text-align: left;
-}
 .main__6thSection__link {
+    flex: 1 1 25%;
+    text-align: left;
     color: #22356F;
-    font-size: 28px;
+    font-size: 1.5rem;
     letter-spacing: -0.03em;
     padding-left: 5%;
 }
 .main__6thSection__link__text {
     color: #22356F80;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: -0.03em;
-    padding: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 0;
 }
 .main__7thSection {
     display: flex;
-    color: #22356F;    
+    color: #22356F;
+    height: 100vh;   
 }
 .main__7thSection__content {
     display: flex;
@@ -214,62 +218,55 @@ button:hover {
     font-size: 16px;
     letter-spacing: 0.1em;
 }
-section.seventh {
+.main__8thSection {
     display: flex;
     color: #FFFFFF;
-    background-color: #22356F; 
+    background-color: #22356F;
+    height: 100vh;
+}
+.main__8thSection__content {
+    margin: 10% 10% 0 10%;
 }
 .main__8thSection__link_contact {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.06em;
-    padding: 10% 0 0 10%;
 }
-section.seventh div:first-child {
-    display: flex;
-    flex-direction: row;
+.main__8thSection__headline {
+    font-size: 3rem;
+    padding-top: 15%;
 }
-section.seventh div:nth-child(2) {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: left;
+.main__8thSection__text {
+    font-size: 1.5rem;
 }
-section.seventh a:last-of-type {
+.main__8thSection__link_help {
     color: #62D0DF;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.1em;
 }
-section.seventh h5 {
-    font-size: 64px;
-    letter-spacing: -0.01em;
-}
-section.seventh p {
-    font-size: 36px;
-    letter-spacing: -0.005em;
-    width: 80%;
-}
-footer {
+
+.footer {
     display: flex;
-    /* flex-flow: row wrap; */
     color: rgba(34, 53, 111, 0.5);
 }
-footer h5{
+.footer h5{
     color: rgba(34, 53, 111);
 }
-footer img {
-    width: 30vw;
+.footer [class$="block"] {
+    flex: 0 0 10%;
+    margin: 5% 0 0 5%;
+    font-size: 0.8rem;
+
 }
-footer div:nth-child(2) {
-    display: flex;
-    /* flex-flow: row wrap; */
+.footer__contacts-block__email {
+    color: #006DFF;
 }
-footer div:last-child {
+.copyright {
     font-size: 14;
     color: #FFFFFF;
     background-color: #62D0DF;
-    padding-top: 33px;
-    padding-bottom: 33px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
     align-items: flex-end;
 }
